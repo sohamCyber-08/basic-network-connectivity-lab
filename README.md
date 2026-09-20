@@ -38,15 +38,15 @@ PC1 ───────── SW1 ───────── PC2
 
 | Device | IP Address    | Subnet Mask   | Default Gateway |
 | ------ | ------------- | ------------- | --------------- |
-| PC1    | 192.168.10.10 | 255.255.255.0 | Not Required    |
-| PC2    | 192.168.10.20 | 255.255.255.0 | Not Required    |
+| PC1    | 192.168.10.1  | 255.255.255.0 | Not Required    |
+| PC2    | 192.168.10.2  | 255.255.255.0 | Not Required    |
 
 ## ⚙️ Configuration
 
 ### PC1
 
 ```bash
-ip 192.168.10.10/24
+ip 192.168.10.1/24
 ```
 
 ### PC2
@@ -54,19 +54,14 @@ ip 192.168.10.10/24
 ```bash
 ip 192.168.10.20/24
 ```
+<img width="1868" height="912" alt="Screenshot 2026-09-20 025526" src="https://github.com/user-attachments/assets/ef6997f0-eabe-4f49-8273-d0217d24b633" />
 
 ## 🔍 Verification
-
-### Check IP configuration
-
-```bash
-show ip
-```
 
 ### Test connectivity
 
 ```bash
-ping 192.168.10.20
+ping 192.168.10.1
 ```
 
 ### Check ARP table
@@ -74,12 +69,18 @@ ping 192.168.10.20
 ```bash
 show arp
 ```
+<img width="1872" height="912" alt="Screenshot 2026-09-20 025701" src="https://github.com/user-attachments/assets/653010d3-2d87-461f-a232-3b1ad7d395e1" />
+
+## ✅ Result
+
+Successfully configured and verified basic Layer 2 connectivity between two hosts through a Cisco switch.
 
 ### Check switch MAC address table
 
 ```cisco
 show mac address-table
 ```
+<img width="1862" height="881" alt="Screenshot 2026-09-20 025609" src="https://github.com/user-attachments/assets/d4e1040d-b811-4b08-9dab-e12a79de793a" />
 
 ## 🔄 Communication Process
 
@@ -109,26 +110,6 @@ ICMP Echo Reply
 PC1
 ```
 
-## 🧪 Troubleshooting
-
-A subnet mismatch was intentionally introduced to verify basic troubleshooting.
-
-The issue was identified by checking:
-
-* Source IP address
-* Destination IP address
-* Subnet mask
-* Connectivity using ICMP
-
-After correcting the configuration, connectivity was verified successfully.
-
-## 📸 Evidence
-
-Screenshots and lab evidence will be added after completing the EVE-NG lab.
-
-## ✅ Result
-
-Successfully configured and verified basic Layer 2 connectivity between two hosts through a Cisco switch.
 
 ### Key Concepts Demonstrated
 
