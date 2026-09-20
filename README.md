@@ -58,6 +58,7 @@ ip 192.168.10.20/24
 
 ## 🔍 Verification
 
+
 ### Test connectivity
 
 ```bash
@@ -71,9 +72,6 @@ show arp
 ```
 <img width="1872" height="912" alt="Screenshot 2026-09-20 025701" src="https://github.com/user-attachments/assets/653010d3-2d87-461f-a232-3b1ad7d395e1" />
 
-## ✅ Result
-
-Successfully configured and verified basic Layer 2 connectivity between two hosts through a Cisco switch.
 
 ### Check switch MAC address table
 
@@ -81,6 +79,11 @@ Successfully configured and verified basic Layer 2 connectivity between two host
 show mac address-table
 ```
 <img width="1862" height="881" alt="Screenshot 2026-09-20 025609" src="https://github.com/user-attachments/assets/d4e1040d-b811-4b08-9dab-e12a79de793a" />
+
+
+## ✅ Result
+
+Successfully configured and verified basic Layer 2 connectivity between two hosts through a Cisco switch.
 
 ## 🔄 Communication Process
 
