@@ -52,7 +52,7 @@ ip 192.168.10.1/24
 ### PC2
 
 ```bash
-ip 192.168.10.20/24
+ip 192.168.10.2/24
 ```
 <img width="1868" height="912" alt="Screenshot 2026-09-20 025526" src="https://github.com/user-attachments/assets/ef6997f0-eabe-4f49-8273-d0217d24b633" />
 
